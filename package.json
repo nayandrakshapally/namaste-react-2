@@ -76,6 +76,7 @@
     "posthtml-parser": "^0.10.2",
     "posthtml-render": "^3.0.0",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-error-overlay": "^6.0.9",
     "react-refresh": "^0.9.0",
     "regenerator-runtime": "^0.13.11",
@@ -100,11 +101,14 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
   }
 }

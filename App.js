@@ -1,7 +1,7 @@
 import React from "react";
-import { ReactDOM } from "react";
+import ReactDOM from "react-dom/client" 
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(document.getElementById('root'));
 
 const heading = React.createElement(
   "h1",
@@ -18,4 +18,6 @@ const parent = React.createElement(
     React.createElement("h2", {}, "This is nested element2"),
   ])
 );
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(parent);
